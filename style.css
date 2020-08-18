@@ -1,0 +1,90 @@
+:root {
+  /* Colors */
+  --veryDarkGreyishBlue: hsl(217, 19%, 35%);
+  --desatDarkBlue: hsl(214, 17%, 51%);
+  --greyBlue: hsl(212, 23%, 69%);
+  --lightGreyBlue: hsl(210, 46%, 95%);
+
+  /* Font Size */
+  --mainFontSize: 13px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--lightGreyBlue);
+  font-family: "Manrope", sans-serif;
+}
+
+/* Create the flex containers. */
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contentBox {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  width: 650px;
+}
+
+.imgContainer img {
+  height: 100%;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+.titleText {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--veryDarkGreyishBlue);
+  padding-bottom: 1rem;
+}
+
+.descriptionText {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--desatDarkBlue);
+  padding-bottom: 1rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--veryDarkGreyishBlue);
+}
+
+.author img {
+  border-radius: 10px 10px;
+  height: 25px;
+  width: auto;
+  float: left;
+}
+
+.author span {
+  color: var(--desatDarkBlue);
+}
+
+.author i {
+  color: grey;
+  background: var(--lightGreyBlue);
+  border-radius: 10px 10px;
+  padding: 5px;
+}
