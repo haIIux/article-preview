@@ -65,7 +65,7 @@ body {
 
 .author {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-weight: 500;
   font-size: 14px;
   color: var(--veryDarkGreyishBlue);
@@ -75,11 +75,8 @@ body {
   border-radius: 10px 10px;
   height: 25px;
   width: auto;
-  float: left;
-}
-
-.author span {
-  color: var(--desatDarkBlue);
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 .author i {
@@ -87,4 +84,36 @@ body {
   background: var(--lightGreyBlue);
   border-radius: 10px 10px;
   padding: 5px;
+  margin-top: 5px;
+}
+
+.authorInfo {
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--veryDarkGreyishBlue);
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--veryDarkGreyishBlue);
+  color: var(--lightGreyBlue);
+  height: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.shareBtn i {
+  border: none;
+  text-decoration: none;
+  background: var(--veryDarkGreyishBlue);
+  border-radius: 0;
+  color: var(--lightGreyBlue);
 }
