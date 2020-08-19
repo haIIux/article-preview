@@ -14,3 +14,5 @@ shareToggle.addEventListener("click", () => {
 // Console log out the click.
 // Problem 2 : Console logs out properly but doesn't add the class.
 // Improperly adding / selecting elements (removed the . in (.active))
+
+// Fixed!
