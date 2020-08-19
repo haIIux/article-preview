@@ -99,15 +99,52 @@ body {
   font-weight: 400;
 }
 
+.icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .share {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
+  justify-content: space-around;
   background: var(--veryDarkGreyishBlue);
   color: var(--lightGreyBlue);
-  height: fit-content;
   padding: 10px;
   border-radius: 8px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+
+  margin-left: 560px;
+  margin-top: 50px;
+}
+.share.active {
+  display: flex;
+  justify-content: space-around;
+  background: var(--veryDarkGreyishBlue);
+  color: var(--lightGreyBlue);
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+
+  margin-left: 560px;
+  margin-top: 50px;
+}
+
+.share:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--veryDarkGreyishBlue);
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
 }
 
 .shareBtn i {
@@ -116,4 +153,12 @@ body {
   background: var(--veryDarkGreyishBlue);
   border-radius: 0;
   color: var(--lightGreyBlue);
+}
+
+.share p {
+  font-size: 10px;
+  font-family: "Manrope";
+  letter-spacing: 5px;
+  color: var(--desatDarkBlue);
+  margin-top: 4px;
 }
